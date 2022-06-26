@@ -4,18 +4,16 @@
   box-sizing: border-box;
 }
 
-
-html, body {
-
+html,
+body {
   font-family: "Jost", sans-serif;
   line-height: 3;
   font-size: 10px;
-  
 }
 /* HEARDER */
 /* Light theme */
-#darkBody{
-  background-color:black;
+#darkBody {
+  background-color: black;
 }
 #switchButton {
   background-color: white;
@@ -28,8 +26,8 @@ html, body {
 }
 
 /* Dark Theme*/
-.dark#darkBody{
-  background-color:white;
+.dark#darkBody {
+  background-color: white;
 }
 .dark #switchButton {
   background-color: black;
@@ -46,40 +44,38 @@ html, body {
   background-color: black;
   color: white;
 }
-header{
-  
+header {
   position: absolute;
   width: 100%;
   height: 100px;
-  top:0;
+  top: 0;
   left: 50%;
   z-index: 100;
   transform: translateX(-50%);
-  border-bottom:2px solid rgba(231, 231, 231, 0.18);
-  background-color:blanchedalmond;
+  border-bottom: 2px solid rgba(231, 231, 231, 0.18);
+  background-color: blanchedalmond;
 }
-header .container{
+header .container {
   max-width: 1250px;
 }
-header .navbar-logo{
+header .navbar-logo {
   font-size: 2rem;
   color: #fff;
 }
-.navbar .navbar-logo{
-font-weight: 600;
-font-size: 30px;
-
+.navbar .navbar-logo {
+  font-weight: 600;
+  font-size: 35px;
 }
 
-header .navbar .navbar-logo{
+header .navbar .navbar-logo {
   color: #fff;
 }
-header .navbar .navbar-logo .fa-align-right{
+header .navbar .navbar-logo .fa-align-right {
   color: #009f4d;
   margin-right: 5px;
   vertical-align: bottom;
 }
-header .navbar .navbar-logo .logo{
+header .navbar .navbar-logo .logo {
   text-transform: none;
   display: block;
   font-size: 16px;
@@ -88,27 +84,27 @@ header .navbar .navbar-logo .logo{
   opacity: 1;
 }
 
-#navbarmenu .nav-item{
+#navbarmenu .nav-item {
   margin: 0 10px;
 }
-#navbarmenu .nav-link i{
+#navbarmenu .nav-link i {
   font-size: 12px;
   transform: translateY(-2px);
 }
 
-#navbarmenu .nav-item .nav-link{
+#navbarmenu .nav-item .nav-link {
   color: #fff;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   font-size: 16px;
   padding: 14px 0 10px;
   text-transform: uppercase;
   font-weight: 600;
   opacity: 0.5;
 }
-#navbarmenu .active .nav-link{
+#navbarmenu .active .nav-link {
   opacity: 1;
 }
-#navbarmenu .header-search{
+#navbarmenu .header-search {
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -119,23 +115,22 @@ header .navbar .navbar-logo .logo{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 20px  ;
+  margin-right: 20px;
   color: #fff;
 }
-#navbarmenu .header-darkLight{
+#navbarmenu .header-darkLight {
   font-size: 20px;
   padding-right: 26px;
   color: #fff;
 }
-#navbarmenu .dropdown-menu{
+#navbarmenu .dropdown-menu {
   width: 180px;
   border-radius: 10px;
   transform: translateX(-60px);
   position: absolute;
   border: none;
-
 }
-#navbarmenu .dropdown-menu a{
+#navbarmenu .dropdown-menu a {
   text-transform: uppercase;
   font-weight: 500;
   color: #3f3a64;
@@ -150,7 +145,7 @@ header .navbar .navbar-logo .logo{
   right: 80px;
   top: -24px;
 }
-.btn{
+.btn {
   display: inline-block;
   font-weight: 400;
   color: #212529;
@@ -163,20 +158,11 @@ header .navbar .navbar-logo .logo{
   font-size: 2rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-
-
-
-
-
-
-
-
-
-
-.footer__subscription .container{
+.footer__subscription .container {
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
@@ -187,11 +173,11 @@ header .navbar .navbar-logo .logo{
   background-color: #151421;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
   /* khi nào viết hết mấy phần trên xoá phần padding vì code css của header possion bị đè */
-  padding: 250px;
- 
- 
+  /* padding: 250px; */
+  margin-top: 10rem;
+  padding: 4.8rem 0;
 }
 .footer__subscription p {
   color: rgba(238, 238, 238, 0.795);
@@ -201,9 +187,8 @@ header .navbar .navbar-logo .logo{
 
 .footer__subscription h3 {
   color: #eee;
-  font-size: 30px;
+  font-size: 3.5rem;
   font-weight: 700;
-
 }
 .footer__content {
   max-width: 700px;
@@ -214,65 +199,173 @@ header .navbar .navbar-logo .logo{
   width: 100%;
   max-width: 550px;
   margin: auto;
-position: relative;}
+  position: relative;
+}
 
-.form__input input{
+.form__input input {
   padding: 14px 20px;
-    font-size: 16px;
-    line-height: 28px;
-    border: 1px solid ;
-    width: 100%;
-    color: #999;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-color: rgba(255, 255, 255, 0.15);
- 
+  font-size: 16px;
+  line-height: 28px;
+  border: 1px solid;
+  width: 100%;
+  color: #999;
+  background-color: #151421;
+  border-color: rgba(255, 255, 255, 0.15);
 }
 .form__input .icon__input {
-  border: 1px solid rgba(255, 255, 255, 0.15) ;
+  border: 1px solid rgba(255, 255, 255, 0.15);
   color: #999;
   padding: 16px 17px;
   border-radius: 5px 0 0 5px;
- 
-font-size: 15px;
+
+  font-size: 15px;
 }
 .subscribe {
   display: flex;
   margin-top: 40px;
-
 }
-.subscribe button{
+.subscribe button {
   cursor: pointer;
   color: #fff;
-    background-color: #00a63f;
-    border-color: #00a63f;
-   border-radius: 0 10px 10px 0;
-   padding: 5px 30px;
-   font-weight: 700;
-   font-size: 15px;
+  background-color: #00a63f;
+  border-color: #00a63f;
+  border-radius: 0 10px 10px 0;
+  padding: 5px 30px;
+  font-weight: 700;
+  font-size: 15px;
+}
+/* footer content */
+.footer__header {
+  margin-bottom: 1.5rem;
+  margin-top: -30px;
 }
 
+.footer__header span {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  margin-right: 5px;
+  vertical-align: bottom;
+}
+.footer__header p {
+  color: #eee;
 
+  display: block;
+  font-size: 15px;
+  padding-left: 46px;
+  font-weight: 600;
+}
+.footer__content2 p {
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: #97a1a9;
+}
+.footer__header i {
+  color: #009f4d;
+}
+.footer__header .container {
+  max-width: 1200px;
+  margin-top: 20px;
+}
+.footer__link .list__link {
+  display: flex;
+}
+.footer__link {
+  margin-top: 1.5rem;
+}
+.footer__link a {
+  margin-right: 15px;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  background: none;
+  border-radius: 50%;
+  color: #97a1a9f5;
+  list-style: none;
+}
+.footer__link li {
+  list-style: none;
+}
+.footer__content2 h3 {
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 25px;
+  font-weight: 400;
+  position: relative;
+  color: #fff;
+}
+.footer__content2 p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #97a1a9;
+}
+.footer__content2 .content li {
+}
+.footer__content2 .content a {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #97a1a9;
+}
 
+.footer__content2 .content a:hover {
+  color: white;
+  text-decoration: none;
+  
+}
 
+.footer__contact {
+  background-color: #151421;
+  border-top: 1px solid rgba(249, 249, 249, 0.1);
+  padding: 10rem 0;
+}
 
+.footer__header-info span.logo i {
+  color: #009f4d;
+}
+.footer__header-info p {
+  text-transform: none;
+  display: block;
+  font-size: 14px;
+  padding-left: 46px;
+  font-weight: 600;
+  /* opacity: 0.9; */
+}
+.footer__header-info .navbar-brand {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 28px;
+  color: #fff;
+  opacity: 1;
+}
+
+.footer__header-info .navbar-brand p {
+  color: white;
+}
+.footer__contact .link{
+  display: flex;
+  flex-direction: column;
+}
 
 /* reponsive */
-@media screen and (max-width: 1024px){
-
+@media screen and (max-width: 1024px) {
 }
 
-@media screen and (max-width: 768px){
-    header .navbar{
-        margin-top: 8px;
-        margin-left: 14px;
-    }
-    header .navbar-toggler{
-        border: none;
-    }
+@media screen and (max-width: 768px) {
+  header .navbar {
+    margin-top: 8px;
+    margin-left: 14px;
+  }
+  header .navbar-toggler {
+    border: none;
+  }
 }
 
-@media screen and (max-width: 480px){
-    header .navbar{
-        padding: 30px 0px;
-    }
+@media screen and (max-width: 480px) {
+  header .navbar {
+    padding: 30px 0px;
+  }
 }
