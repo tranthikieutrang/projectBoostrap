@@ -169,7 +169,7 @@ header .navbar .navbar-logo .logo {
   padding: 40px 15px;
 }
 .footer__subscription {
-  background-image: url(../images/map.png);
+  background-image: url(../images/map.png); 
   background-color: #151421;
   background-size: contain;
   background-repeat: no-repeat;
