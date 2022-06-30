@@ -183,7 +183,7 @@ header .navbar .navbar-logo .logo{
   padding: 40px 15px;
 }
 .footer__subscription {
-  background-image: url(../images/map.png);
+  background-image: url(../images/map.png); 
   background-color: #151421;
   background-size: contain;
   background-repeat: no-repeat;
@@ -214,7 +214,8 @@ header .navbar .navbar-logo .logo{
   width: 100%;
   max-width: 550px;
   margin: auto;
-position: relative;}
+position: relative;
+}
 
 .form__input input{
   padding: 14px 20px;
