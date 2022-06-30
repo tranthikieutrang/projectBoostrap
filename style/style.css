@@ -369,3 +369,98 @@ header .navbar .navbar-logo .logo {
     padding: 30px 0px;
   }
 }
+
+/* w3-blog  */
+.blog__title {
+  text-align: center;
+}
+.blog__title h5 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color:#97a1a9;
+  display: block;
+  
+
+}
+.blog__title h3 {
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 700;
+}
+.article {
+  box-shadow: 0 25px 98px 0 rgb(0 0 0 / 4%);
+  border: 1px solid var(--border-color);
+  
+}
+.article .card__body {
+  flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+.card__body .hello {
+  display: block;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #000;
+    text-decoration: none;
+}
+.card__body .Startup {
+  font-weight: 400;
+  font-size: 17px;
+  color: #999;
+  text-decoration: none;
+}
+.article .card__header {
+  border: none;
+}
+.card__header a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.card__header img {
+  width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    display: block;
+}
+.card__footer {
+  background: var(--bg-color);
+    border-top: 1px solid var(--border-color-light);
+    padding: 0.75rem 1.25rem;
+    display: flex;
+
+}
+.card__footer p {
+  padding-left:15px ;
+  color: #97a1a9;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.card__footer .W3Layouts {
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+  line-height: 26px;
+  text-transform: capitalize;
+  padding-left: 5px;
+  
+}
+.card__footer span {
+ font-size: 15px;
+  width: 100%;
+  text-align:right;
+  color: #151421b4;
+}
