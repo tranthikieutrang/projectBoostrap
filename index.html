@@ -17,87 +17,160 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
     integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
   <link rel="stylesheet" href="./style/fonts.css" />
   <link rel="stylesheet" href="./style/style.css" />
 </head>
 
 <body id="darkBody" class="dark">
-  <header>
-      <div class="container">
-        <nav class="navbar navbar-expand-lg py-2 navbar-dark">
-          <h1>
-            <a class="navbar-logo" href="https://wp.w3layouts.com/corpvision/">
-              <span class="fa fa-align-right"></span>Corp Vision
-              <span class="logo">Vision to your Future</span>
-            </a>
-          </h1>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarmenu"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarmenu">
-            <ul class="navbar-nav m-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Pages <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Blog Post</a>
-                  <a class="dropdown-item" href="#">404 Pages</a>
-                  <a class="dropdown-item" href="#">Landing Page</a>
-                  <a class="dropdown-item" href="#">Elements Page</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Contact</a>
-              </li>
-            </ul>
-            <div class="header-search HeaderSearch">
-              <div class="control">
-                <div class="btn-material">
-                  <i class="fa fa-search icon-material-search"></i>
-                </div>
+  <header id="site-header" class="fixed-top main-header">
+    <div class="container">
+      <nav id="navbarmenu" class="navbar navbar-expand-lg navbar-dark stroke">
+        <h1><a class="navbar-brand" href="https://wp.w3layouts.com/corpvision/">
+            <span class="fa fa-align-right"></span>Corp Vision <span class="logo">Vision to your Future</span>
+          </a></h1>
+  
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-content"
+          aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbar-content">
+          <ul id="primary-menu" class="navbar-nav mx-lg-auto">
+            <li id="menu-item-23"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-23 nav-item active">
+              <a href="https://wp.w3layouts.com/corpvision/" class="nav-link active">Home</a></li>
+            <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24 nav-item">
+              <a href="https://wp.w3layouts.com/corpvision/about-page/" class="nav-link">About</a></li>
+            <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25 nav-item">
+              <a href="https://wp.w3layouts.com/corpvision/services-page/" class="nav-link">Services</a></li>
+            <li id="menu-item-26"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-26 nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbar-dropdown-menu-link-26"
+                aria-haspopup="true" aria-expanded="false">Pages</a>
+              <div class="sub-menu dropdown-menu" aria-labelledby="navbar-dropdown-menu-link-26">
+                <a href="https://wp.w3layouts.com/corpvision/blog-posts/" class="dropdown-item" id="menu-item-27">Blog
+                  Posts</a><a href="https://wp.w3layouts.com/corpvision/404-page/" class="dropdown-item"
+                  id="menu-item-28">404 page</a><a href="https://wp.w3layouts.com/corpvision/single-landing-page/"
+                  class="dropdown-item" id="menu-item-29">Landing page</a><a
+                  href="https://wp.w3layouts.com/corpvision/elements-page/" class="dropdown-item"
+                  id="menu-item-30">Elements page</a>
+              </div>
+            </li>
+            <li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31 nav-item">
+              <a href="https://wp.w3layouts.com/corpvision/contact-page/" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="header-search">
+            <div class='control mr-3'>
+              <div class='btn-search-header'>
+                <i class='fa fa-search icon-material-search'></i>
               </div>
             </div>
-            <div>
-              <button
-                class="btn"
-                id="switchButton"
-                title="Click to switch theme"
-              >
-                <i class="far fa-moon"></i>
-                <i class="far fa-sun"></i>
-              </button>
+            
+          </div>
+  
+          <!-- toggle switch for light and dark theme -->
+          <div class="mobile-position text-center DarkandLight">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox">
+                  <div class="mode-container">
+                    <i class="gg-sun"></i>
+                    <i class="gg-moon"></i>
+                  </div>
+                </label>
+              </div>
+            </nav>
+          </div>
+          <!-- //toggle switch for light and dark theme -->
+  
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="slide-main">
+    <div class="banner-slider">
+      <div class="banner-slide slide-main__item bg1">
+
+        <div class="container HomePageBannerSlider">
+          <div class="hero-content">
+            <h1 data-animation="flipInX" data-delay="0.8s" data-color="#fff">
+              We will solve your issues our vision to your future</h1>
+            <p data-animation="fadeInDown" class="mt-4">Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea. </p>
+            <div class="cta-btn" data-animation="fadeInUp" data-delay="1s">
+              <a href="#url" class="banner-slide__btn">
+                Learn More</a>
             </div>
           </div>
-        </nav>
+        </div>
+        <div class="hero-overlay"></div>
       </div>
-    </header>
+      <div class="banner-slide slide-main__item bg2">
+
+        <div class="container">
+          <div class="hero-content">
+            <h1 data-animation="fadeInDown" data-delay="0.8s" data-color="#fff">
+              Embracing success do our best, need best advice </h1>
+            <p data-animation="fadeInDown" class="mt-4">Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea. </p>
+            <div class="cta-btn" data-animation="fadeInDown" data-delay="1s">
+              <a href="#url" class="banner-slide__btn">
+                Get Started</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="banner-slide slide-main__item bg3">
+
+        <div class="container">
+          <div class="hero-content">
+            <h1 data-animation="fadeInUp" data-color="#fff" data-delay="0.8s">
+              Digital transformation driven by technology</h1>
+            <p data-animation="fadeInUp" class="mt-4">Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+              dolore
+              magna aliqua. Ut enim ad minim veniam, quis nisi ut ea. </p>
+            <div class="cta-btn" data-animation="fadeInDown" data-delay="1s">
+              <a href="#url" class="banner-slide__btn">
+                Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="banner-slide slide-main__item bg4">
+
+        <div class="container">
+          <div class="hero-content">
+            <h1 data-animation="flipInX" data-color="#fff" data-delay="0.8s">
+              For those who believe in leaving a mark</h1>
+            <p data-animation="fadeInDown" class="mt-4">Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea. </p>
+            <div class="cta-btn" data-animation="fadeInUp" data-delay="1s">
+              <a href="#url" class="banner-slide__btn">
+                Contact Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-overlay"></div>
+      </div>
+    </div>
+    <div class="shape">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+        <path fill-opacity="1">
+          <animate attributeName="d" dur="20000ms" repeatCount="indefinite"
+            values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+              M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;" />
+        </path>
+      </svg>
+    </div>
+  </div>
+
 
   <section class="home-block-support">
     <div class=" py-5">
@@ -106,7 +179,8 @@
           <div class="col-lg-6">
             <span class="home-block-support__title-small">About Us</span>
             <h3 class="home-block-support__title-big">We make the best strategies for you, Enhancing your success</h3>
-            <p class="mt-md-4 mt-3 home-block-support__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            <p class="mt-md-4 mt-3 home-block-support__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut
               ex ea. </p>
 
@@ -156,7 +230,7 @@
             Suspendisse non init magnaa velit efficitur, dolor eget ex
             fermentum.
           </p>
-          <a href="#" class="features-block__btn btn btn-style btn-primary mt-lg-5 mt-4">
+          <a href="#" class="features-block__btn banner-slide__btn mt-lg-5 mt-4">
             Discover More</a>
         </div>
         <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4 justify-content-center">
@@ -702,10 +776,11 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
     crossorigin="anonymous"></script>
   <script src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/js/owl.carousel.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./js/darkbody.js"></script>
 </body>
 
